@@ -22,6 +22,51 @@ const SOURCE_COLORS: Record<string, string> = {
   "MIT Technology Review": "text-purple-400 border-purple-800",
 };
 
+// 企業タブの定義：英語タイトル・タグに含まれるキーワードでマッチング
+const COMPANY_TABS = [
+  { label: "すべて", key: "all", keywords: [] },
+  {
+    label: "OpenAI・ChatGPT",
+    key: "openai",
+    keywords: ["openai", "chatgpt", "gpt-", "sora", "o1", "o3"],
+  },
+  {
+    label: "Google・Gemini",
+    key: "google",
+    keywords: ["google", "gemini", "deepmind", "bard", "waymo"],
+  },
+  {
+    label: "Anthropic・Claude",
+    key: "anthropic",
+    keywords: ["anthropic", "claude"],
+  },
+  {
+    label: "Meta・Llama",
+    key: "meta",
+    keywords: ["meta ", " meta", "llama", "facebook"],
+  },
+  {
+    label: "Microsoft・Copilot",
+    key: "microsoft",
+    keywords: ["microsoft", "copilot", "azure", "bing"],
+  },
+  {
+    label: "xAI・Grok",
+    key: "xai",
+    keywords: ["xai", " grok", "elon musk"],
+  },
+] as const;
+
+type CompanyKey = (typeof COMPANY_TABS)[number]["key"];
+
+function matchesCompany(item: NewsItem, key: CompanyKey): boolean {
+  if (key === "all") return true;
+  const tab = COMPANY_TABS.find((t) => t.key === key)!;
+  const haystack =
+    (item.title + " " + item.tags.join(" ")).toLowerCase();
+  return tab.keywords.some((kw) => haystack.includes(kw));
+}
+
 function formatDate(iso: string): string {
   return new Date(iso).toLocaleDateString("ja-JP", {
     year: "numeric",
@@ -31,26 +76,41 @@ function formatDate(iso: string): string {
 }
 
 export default function Home() {
-  const [activeTag, setActiveTag] = useState<string | null>(null);
+  const [activeCompany, setActiveCompany] = useState<CompanyKey>("all");
 
-  const allTags = useMemo(() => {
+  const filtered = useMemo(() => {
+    return news
+      .filter((item) => matchesCompany(item, activeCompany))
+      .slice(0, 12);
+  }, [activeCompany]);
+
+  // 表示中の記事に含まれるトピックタグ（企業名タグは除外）
+  const companyTagNames = new Set(
+    COMPANY_TABS.flatMap((t) =>
+      t.key !== "all"
+        ? [
+            "OpenAI", "Google", "Anthropic", "Meta", "Microsoft",
+            "xAI", "DeepMind", "ChatGPT", "Gemini", "Claude", "Llama",
+            "Copilot", "Waymo", "Facebook",
+          ]
+        : []
+    )
+  );
+
+  const topicTags = useMemo(() => {
     const tagCount: Record<string, number> = {};
     news.forEach((item) => {
       item.tags.forEach((tag) => {
-        tagCount[tag] = (tagCount[tag] || 0) + 1;
+        if (!companyTagNames.has(tag)) {
+          tagCount[tag] = (tagCount[tag] || 0) + 1;
+        }
       });
     });
     return Object.entries(tagCount)
       .sort((a, b) => b[1] - a[1])
-      .map(([tag]) => tag);
+      .map(([tag]) => tag)
+      .slice(0, 12);
   }, []);
-
-  const filtered = useMemo(() => {
-    const items = activeTag
-      ? news.filter((item) => item.tags.includes(activeTag))
-      : news;
-    return items.slice(0, 12);
-  }, [activeTag]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -62,47 +122,48 @@ export default function Home() {
           </span>
         </h1>
         <p className="text-gray-400 text-sm sm:text-base">
-          海外主要メディアのAI関連ニュースを毎朝9時に日本語要約してお届け
+          海外主要メディアのAI関連ニュースを毎朝6時に日本語要約してお届け
         </p>
       </div>
 
-      {/* Tag filters */}
-      {allTags.length > 0 && (
-        <div className="flex flex-wrap gap-2 mb-8">
+      {/* 企業タブ */}
+      <div className="flex flex-wrap gap-2 mb-4">
+        {COMPANY_TABS.map((tab) => (
           <button
-            onClick={() => setActiveTag(null)}
-            className={`px-3 py-1 rounded-full text-sm border transition-all ${
-              activeTag === null
-                ? "bg-green-500 border-green-500 text-black font-medium"
+            key={tab.key}
+            onClick={() => setActiveCompany(tab.key)}
+            className={`px-4 py-1.5 rounded-full text-sm font-medium border transition-all ${
+              activeCompany === tab.key
+                ? "bg-green-500 border-green-500 text-black"
                 : "border-gray-700 text-gray-400 hover:border-green-600 hover:text-green-400"
             }`}
           >
-            すべて
+            {tab.label}
           </button>
-          {allTags.map((tag) => (
-            <button
+        ))}
+      </div>
+
+      {/* トピックタグ（小さめ） */}
+      {topicTags.length > 0 && activeCompany === "all" && (
+        <div className="flex flex-wrap gap-1.5 mb-8">
+          {topicTags.map((tag) => (
+            <span
               key={tag}
-              onClick={() => setActiveTag(tag === activeTag ? null : tag)}
-              className={`px-3 py-1 rounded-full text-sm border transition-all ${
-                activeTag === tag
-                  ? "bg-green-500 border-green-500 text-black font-medium"
-                  : "border-gray-700 text-gray-400 hover:border-green-600 hover:text-green-400"
-              }`}
+              className="text-xs border border-gray-800 text-gray-500 rounded-full px-2.5 py-0.5"
             >
               {tag}
-            </button>
+            </span>
           ))}
         </div>
       )}
+      {activeCompany !== "all" && <div className="mb-8" />}
 
-      {/* News grid */}
+      {/* ニュースグリッド */}
       {filtered.length === 0 ? (
         <div className="text-center py-24 text-gray-500">
           <p className="text-5xl mb-4">📭</p>
-          <p className="text-lg">まだニュースがありません</p>
-          <p className="text-sm mt-2">
-            GitHub Actions が実行されるとここにニュースが表示されます
-          </p>
+          <p className="text-lg">該当する記事がありません</p>
+          <p className="text-sm mt-2">別のタブを選択するか、翌朝の更新をお待ちください</p>
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -117,8 +178,7 @@ export default function Home() {
               <div className="flex items-center justify-between mb-3">
                 <span
                   className={`text-xs font-medium border rounded px-2 py-0.5 ${
-                    SOURCE_COLORS[item.source] ||
-                    "text-gray-400 border-gray-700"
+                    SOURCE_COLORS[item.source] || "text-gray-400 border-gray-700"
                   }`}
                 >
                   {item.source}

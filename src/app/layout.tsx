@@ -9,7 +9,7 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  title: "AI NEWS - 最新AI情報を毎日お届け",
+  title: "AI 何でもNEWS - 海外の最新AI情報を日本語でお届け!",
   description:
     "TechCrunch、VentureBeat、MIT Technology ReviewのAI関連ニュースを日本語で毎朝お届けします。",
 };

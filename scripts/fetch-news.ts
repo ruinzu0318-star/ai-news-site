@@ -67,7 +67,7 @@ async function summarizeArticle(
 {
   "titleJa": "記事タイトルの日本語訳（簡潔に）",
   "summary": "日本語要約（200字以内）",
-  "tags": ["関連タグ1", "関連タグ2"]（AI, LLM, 画像生成, ロボット, 自動運転, セキュリティ, ビジネス, 研究 などから選択）
+  "tags": ["関連タグ1", "関連タグ2"]（トピック: AI, LLM, 画像生成, ロボット, 自動運転, セキュリティ, ビジネス, 研究 などから選択。企業名: 記事に登場する場合は OpenAI, Google, Anthropic, Meta, Microsoft, xAI, Apple, Amazon, Nvidia なども追加）
 }`;
 
   const message = await client.messages.create({

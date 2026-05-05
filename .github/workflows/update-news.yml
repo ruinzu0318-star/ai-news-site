@@ -2,8 +2,8 @@ name: Update AI News
 
 on:
   schedule:
-    # 毎朝 UTC 0:00 = 日本時間 9:00
-    - cron: "0 0 * * *"
+    # 毎朝 UTC 21:00 = 日本時間 6:00
+    - cron: "0 21 * * *"
   workflow_dispatch:
 
 jobs:

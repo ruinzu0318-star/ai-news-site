@@ -30,7 +30,7 @@ export default function RootLayout({
                   AI NEWS
                 </span>
                 <span className="hidden sm:block text-xs text-gray-500 border border-gray-700 rounded px-2 py-0.5">
-                  毎朝9時更新
+                  毎朝6時更新
                 </span>
               </a>
               <div className="flex items-center gap-4 text-sm text-gray-400">

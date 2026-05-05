@@ -1,6 +1,6 @@
 # AI NEWS
 
-TechCrunch・VentureBeat・MIT Technology ReviewのAI関連ニュースを毎朝9時に日本語要約して公開するサイトです。
+TechCrunch・VentureBeat・MIT Technology ReviewのAI関連ニュースを毎朝6時に日本語要約して公開するサイトです。
 
 ## 概要
 
@@ -9,7 +9,7 @@ TechCrunch・VentureBeat・MIT Technology ReviewのAI関連ニュースを毎朝
 - **ホスティング**: Vercel（無料プラン）
 - **ニュース収集**: RSSフィード（TechCrunch / VentureBeat / MIT Technology Review）
 - **AI要約**: Claude API（claude-haiku）
-- **自動更新**: GitHub Actions（毎朝9時 JST）
+- **自動更新**: GitHub Actions（毎朝6時 JST）
 
 ---
 
@@ -93,6 +93,9 @@ npx tsx scripts/fetch-news.ts
 |---|---|
 | `ANTHROPIC_API_KEY` | Anthropicで取得したAPIキー |
 | `GH_TOKEN` | GitHubのPersonal Access Token（`repo`権限が必要） |
+| `VERCEL_TOKEN` | Vercel のアクセストークン（[Vercel Settings > Tokens](https://vercel.com/account/tokens)） |
+| `VERCEL_ORG_ID` | Vercel のチーム/個人ID（`vercel whoami` または Vercel プロジェクト設定で確認） |
+| `VERCEL_PROJECT_ID` | Vercel のプロジェクトID（Vercel プロジェクト設定 > General で確認） |
 
 ### GitHub Personal Access Token の取得
 
@@ -102,7 +105,7 @@ npx tsx scripts/fetch-news.ts
 4. Permissions: **Contents** を **Read and write** に設定
 5. トークンをコピーして `GH_TOKEN` シークレットに貼り付け
 
-設定後、毎朝UTC 0:00（日本時間9:00）に自動実行されます。  
+設定後、毎朝UTC 21:00（日本時間6:00）に自動実行されます。  
 手動実行は **Actions** タブ → **Update AI News** → **Run workflow** から可能です。
 
 ---

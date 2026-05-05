@@ -1,5 +1,19 @@
 [
   {
+    "id": "abfc2dfb928e74e6",
+    "title": "As workers worry about AI, Nvidia’s Jensen Huang says AI is ‘creating an enormous number of jobs’",
+    "titleJa": "労働者がAIを懸念する中、NvidiaのCEO・黄仁勲がAIは「膨大な数の雇用を創出している」と述べる",
+    "summary": "Nvidia CEO・黄仁勲は、AIが仕事を奪うという懸念に対して、そうした主張は大きく誇張されていると主張している。彼はAIが新たな雇用機会を大規模に生み出していると考えており、労働者のAIに対する不安とは異なる見方を示している。",
+    "url": "https://techcrunch.com/2026/05/04/as-workers-worry-about-ai-nvidias-jensen-huang-says-ai-is-creating-an-enormous-number-of-jobs/",
+    "source": "TechCrunch",
+    "publishedAt": "2026-05-05T03:31:54.000Z",
+    "tags": [
+      "AI",
+      "ビジネス",
+      "Nvidia"
+    ]
+  },
+  {
     "id": "a1b2c3d4e5f6a7b8",
     "title": "OpenAI releases GPT-5 with unprecedented reasoning capabilities",
     "titleJa": "OpenAIがGPT-5を発表——推論能力が飛躍的に向上",
@@ -425,6 +439,36 @@
     ]
   },
   {
+    "id": "fe0ffe6ad11fc585",
+    "title": "Cyber-Insecurity in the AI Era",
+    "titleJa": "AI時代のサイバーセキュリティ危機",
+    "summary": "サイバーセキュリティは既に課題を抱えていたが、AIの登場により攻撃対象が拡大し複雑性が増している。従来のセキュリティ対策では対応の限界が顕著になりつつある。MIT Technology Reviewの会議では、セキュリティはAIを後付けするのではなく、AIを中核に据えた根本的な再設計が必要であることを議論している。",
+    "url": "https://www.technologyreview.com/2026/05/01/1136779/cyber-insecurity-in-the-ai-era/",
+    "source": "MIT Technology Review",
+    "publishedAt": "2026-05-01T15:54:01.000Z",
+    "tags": [
+      "AI",
+      "セキュリティ",
+      "サイバー攻撃",
+      "リスク管理"
+    ]
+  },
+  {
+    "id": "b3d2ed33366fa9f2",
+    "title": "Operationalizing AI for Scale and Sovereignty",
+    "titleJa": "AIの規模化と主権化の実装",
+    "summary": "企業は自社データの管理を強化し、AIを自らのニーズに合わせてカスタマイズしている。記事はMIT Technology Review主催のEmTech AIカンファレンスでの議論を通じて、データ所有権と高品質データの安全で信頼性のある流通のバランスを取ることの重要性を説明。AI工場が規模の拡大、持続可能性、ガバナンスの向上をいかに実現するかを検討している。",
+    "url": "https://www.technologyreview.com/2026/05/01/1136772/operationalizing-ai-for-scale-and-sovereignty/",
+    "source": "MIT Technology Review",
+    "publishedAt": "2026-05-01T15:31:09.000Z",
+    "tags": [
+      "AI",
+      "ビジネス",
+      "セキュリティ",
+      "MIT Technology Review"
+    ]
+  },
+  {
     "id": "8e8efee2f30ab134",
     "title": "Musk v. Altman is just getting started",
     "titleJa": "マスク対アルトマン訴訟はこれからが本番",
@@ -434,6 +478,64 @@
     "publishedAt": "2026-05-01T14:00:00.000Z",
     "tags": [
       "AI",
+      "ビジネス"
+    ]
+  },
+  {
+    "id": "88f9ea66c1ea6aae",
+    "title": "The Download: a new Christian phone network, and debugging LLMs",
+    "titleJa": "ダウンロード: クリスチャン向け新型携帯ネットワークとLLMのデバッグ",
+    "summary": "MIT Technology Reviewの日刊ニュースレター「The Download」の今日号。米国で新たなクリスチャン向け携帯電話ネットワークが来週立ち上がり、ポルノと性別関連コンテンツをブロックする機能を提供する。また、大規模言語モデル（LLM）のデバッグに関する技術動向も報じており、AI技術と社会的価値観の融合における課題が浮き彫りになっている。",
+    "url": "https://www.technologyreview.com/2026/05/01/1136762/the-download-christian-phone-network-debugging-llms/",
+    "source": "MIT Technology Review",
+    "publishedAt": "2026-05-01T12:10:00.000Z",
+    "tags": [
+      "AI",
+      "LLM",
+      "セキュリティ",
+      "ビジネス",
+      "通信技術"
+    ]
+  },
+  {
+    "id": "8e95b2e10c5cb06d",
+    "title": "Inexpensive seafloor-hopping submersibles could stoke deep-sea science—and mining",
+    "titleJa": "低価格の海底探査潜水艦が深海科学と鉱業を促進する可能性",
+    "summary": "米国のNOAAは太平洋の海底8,000平方海里以上をマッピングし、重要鉱物資源を探索中。低価格で操作しやすい潜水艦技術により、深海探査がより実現可能になりつつある。この技術は科学的な海洋調査だけでなく、海底鉱物資源採掘にも活用される可能性があり、深海産業に革新をもたらす見通しが示されている。",
+    "url": "https://www.technologyreview.com/2026/05/01/1136734/inexpensive-seafloor-hopping-submersibles-could-stoke-deep-sea-science-and-mining/",
+    "source": "MIT Technology Review",
+    "publishedAt": "2026-05-01T10:00:00.000Z",
+    "tags": [
+      "ロボット",
+      "海洋技術",
+      "鉱物資源",
+      "研究"
+    ]
+  },
+  {
+    "id": "f32dfa73f66f03ce",
+    "title": "Trump’s mass firing just dealt another blow to American science",
+    "titleJa": "トランプ大統領の大量解雇がアメリカの科学にさらなる打撃を与える",
+    "summary": "アメリカの国立科学財団（NSF）が大量解雇の対象となった。NSFは年間約90億ドルの予算で主要な研究プロジェクトに資金を提供する連邦機関であり、22人の著名な科学者からなる委員会がその事業を監督していた。先週金曜日、この委員会のメンバー全員が解雇された。この措置はアメリカの科学研究に対する深刻な影響をもたらしている。",
+    "url": "https://www.technologyreview.com/2026/05/01/1136722/mass-firing-trump-fresh-blow-american-science-nsf-nsb/",
+    "source": "MIT Technology Review",
+    "publishedAt": "2026-05-01T09:00:00.000Z",
+    "tags": [
+      "研究",
+      "ビジネス",
+      "政策"
+    ]
+  },
+  {
+    "id": "46ae8c0265bb17f1",
+    "title": "A new US phone network for Christians aims to block porn and gender-related content",
+    "titleJa": "キリスト教向け米国携帯ネットワーク、ポルノと性別関連コンテンツをブロック",
+    "summary": "米国でキリスト教徒向けに展開される新しい携帯ネットワークが来週起動予定。このネットワークはポルノをネットワークレベルでブロックする機能を備えており、大人のユーザーでも無効化できない仕様となっている。米国の携帯プランでこのようなネットワークレベルのコンテンツフィルタリングは初の事例。性別関連のコンテンツもフィルタリング対象に含まれている。",
+    "url": "https://www.technologyreview.com/2026/05/01/1136739/a-new-t-mobile-network-for-christians-aims-to-block-porn-and-gender-related-content/",
+    "source": "MIT Technology Review",
+    "publishedAt": "2026-05-01T09:00:00.000Z",
+    "tags": [
+      "セキュリティ",
       "ビジネス"
     ]
   },
@@ -474,6 +576,21 @@
     "tags": [
       "AI",
       "ビジネス"
+    ]
+  },
+  {
+    "id": "940b2036b7b7776e",
+    "title": "Exclusive eBook: Inside the stealthy startup that pitched brainless human clones",
+    "titleJa": "脳なしヒトクローン構想を提案するステルススタートアップの内部",
+    "summary": "MIT Technology Reviewの有料記事。R3 Bioという小規模スタートアップが、不死を目指す究極のプランとして、バックアップ用の人間の身体として機能する「脳なしクローン」という倫理的に物議を醸す構想を提案している。この革新的かつ議論の余地がある技術について探る記事。",
+    "url": "https://www.technologyreview.com/2026/04/30/1136684/exclusive-ebook-inside-the-stealthy-startup-that-pitched-brainless-human-clones/",
+    "source": "MIT Technology Review",
+    "publishedAt": "2026-04-30T18:42:50.000Z",
+    "tags": [
+      "ビジネス",
+      "研究",
+      "バイオテクノロジー",
+      "倫理"
     ]
   },
   {

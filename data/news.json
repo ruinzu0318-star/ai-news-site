@@ -1,1 +1,122 @@
-[]
+[
+  {
+    "id": "a1b2c3d4e5f6a7b8",
+    "title": "OpenAI releases GPT-5 with unprecedented reasoning capabilities",
+    "titleJa": "OpenAIがGPT-5を発表——推論能力が飛躍的に向上",
+    "summary": "OpenAIは次世代モデル「GPT-5」を正式発表した。複雑な数学問題や科学的推論を人間の専門家レベルで解く能力を持ち、マルチモーダル処理も大幅強化。企業向けAPIは即日提供開始。",
+    "url": "https://techcrunch.com/",
+    "source": "TechCrunch",
+    "publishedAt": "2026-05-05T01:00:00Z",
+    "tags": ["AI", "LLM", "OpenAI"]
+  },
+  {
+    "id": "b2c3d4e5f6a7b8c9",
+    "title": "Google DeepMind's new AI model beats humans at protein structure prediction",
+    "titleJa": "DeepMindの新AIがタンパク質構造予測で人間を超える",
+    "summary": "Google DeepMindはAlphaFold3の後継モデルを発表。既知・未知のタンパク質構造予測精度が大幅向上し、創薬研究の期間を従来比80%短縮できると試算。製薬各社との連携も発表された。",
+    "url": "https://venturebeat.com/",
+    "source": "VentureBeat",
+    "publishedAt": "2026-05-04T23:00:00Z",
+    "tags": ["AI", "研究", "医療"]
+  },
+  {
+    "id": "c3d4e5f6a7b8c9d0",
+    "title": "Anthropic raises $3 billion to scale Claude AI across enterprises",
+    "titleJa": "Anthropic、企業向けClaude展開に向け3,000億円を調達",
+    "summary": "Anthropicは30億ドルの資金調達ラウンドを完了したと発表。調達資金はClaudeの企業向けサービス拡大、インフラ増強、安全性研究に充てられる。評価額は400億ドルに達した。",
+    "url": "https://techcrunch.com/",
+    "source": "TechCrunch",
+    "publishedAt": "2026-05-04T18:00:00Z",
+    "tags": ["AI", "ビジネス", "LLM"]
+  },
+  {
+    "id": "d4e5f6a7b8c9d0e1",
+    "title": "MIT researchers develop AI that can learn from a single example",
+    "titleJa": "MIT研究チーム、1例だけで学習するAIを開発",
+    "summary": "MITの研究者が「ワンショット学習」を大幅に改善した新アーキテクチャを発表。従来の1000分の1のデータで同精度を達成。医療診断やロボット制御など少量データしか得られない分野への応用が期待される。",
+    "url": "https://www.technologyreview.com/",
+    "source": "MIT Technology Review",
+    "publishedAt": "2026-05-04T14:00:00Z",
+    "tags": ["AI", "研究", "機械学習"]
+  },
+  {
+    "id": "e5f6a7b8c9d0e1f2",
+    "title": "Tesla's Optimus robot achieves autonomous factory work milestone",
+    "titleJa": "テスラのOptimusロボットが工場での完全自律作業に到達",
+    "summary": "テスラはヒューマノイドロボット「Optimus」が同社工場で人間の監督なしに8時間連続稼働に成功したと発表。部品の搬送・組み立て・品質チェックまで自律で遂行。2026年末までに1000台を量産予定。",
+    "url": "https://venturebeat.com/",
+    "source": "VentureBeat",
+    "publishedAt": "2026-05-04T10:00:00Z",
+    "tags": ["AI", "ロボット", "自動化"]
+  },
+  {
+    "id": "f6a7b8c9d0e1f2a3",
+    "title": "EU's AI Act enforcement begins with first major fines for non-compliance",
+    "titleJa": "EUのAI規制法が施行——初の高額罰則事例が相次ぐ",
+    "summary": "EU AI法の完全施行が始まり、高リスクAIシステムを適切な審査なく展開した企業3社に計1億5,000万ユーロの罰金が科された。各国規制当局はコンプライアンス体制の整備を企業に急ぐよう求めている。",
+    "url": "https://www.technologyreview.com/",
+    "source": "MIT Technology Review",
+    "publishedAt": "2026-05-03T20:00:00Z",
+    "tags": ["AI", "規制", "ビジネス"]
+  },
+  {
+    "id": "a7b8c9d0e1f2a3b4",
+    "title": "Meta open-sources its most powerful image generation model yet",
+    "titleJa": "Metaが最高性能の画像生成モデルをオープンソース化",
+    "summary": "MetaはImagine 3を商用利用可能なオープンソースとして公開した。フォトリアリスティックな画像生成品質でMidjourney V7に匹敵すると評される。モデルウェイトとトレーニングコードも合わせて公開。",
+    "url": "https://techcrunch.com/",
+    "source": "TechCrunch",
+    "publishedAt": "2026-05-03T15:00:00Z",
+    "tags": ["AI", "画像生成", "オープンソース"]
+  },
+  {
+    "id": "b8c9d0e1f2a3b4c5",
+    "title": "Nvidia announces next-gen AI chips with 10x performance improvement",
+    "titleJa": "NvidiaがAIチップ次世代モデルを発表——性能は10倍に",
+    "summary": "NvidiaはBlackwell後継となる「Rubin」アーキテクチャを正式発表。AI推論性能は前世代比10倍、消費電力は30%削減を実現。2026年Q4からクラウドプロバイダー向けに出荷開始予定。",
+    "url": "https://venturebeat.com/",
+    "source": "VentureBeat",
+    "publishedAt": "2026-05-03T08:00:00Z",
+    "tags": ["AI", "ハードウェア", "ビジネス"]
+  },
+  {
+    "id": "c9d0e1f2a3b4c5d6",
+    "title": "AI-powered drug discovery startup raises $500M after FDA breakthrough",
+    "titleJa": "FDA承認突破のAI創薬スタートアップが500億円調達",
+    "summary": "AIで設計した候補化合物がFDAの革新的治療法指定を取得したInsitro社が5億ドルを調達。同社のAIプラットフォームは新薬候補の特定期間を従来の5年から8ヶ月に短縮することに成功した。",
+    "url": "https://techcrunch.com/",
+    "source": "TechCrunch",
+    "publishedAt": "2026-05-02T22:00:00Z",
+    "tags": ["AI", "医療", "ビジネス"]
+  },
+  {
+    "id": "d0e1f2a3b4c5d6e7",
+    "title": "Waymo expands robotaxi service to 10 new cities amid safety milestone",
+    "titleJa": "Waymo、安全走行記録を更新しながら10都市に拡大",
+    "summary": "Waymoは完全無人自動運転タクシーの提供都市を10都市追加すると発表。累計走行距離2,000万マイルで重大事故ゼロを達成。2027年末までに米国50都市への展開を目指す。",
+    "url": "https://venturebeat.com/",
+    "source": "VentureBeat",
+    "publishedAt": "2026-05-02T16:00:00Z",
+    "tags": ["AI", "自動運転", "ビジネス"]
+  },
+  {
+    "id": "e1f2a3b4c5d6e7f8",
+    "title": "Microsoft Copilot gets real-time voice translation in 40 languages",
+    "titleJa": "Microsoft Copilotが40言語のリアルタイム音声翻訳に対応",
+    "summary": "MicrosoftはCopilotに40言語対応のリアルタイム音声翻訳機能を追加した。会議中の自動字幕・翻訳を遅延100ms以下で実現。Teams、Outlook、Officeアプリ全体に順次展開される。",
+    "url": "https://www.technologyreview.com/",
+    "source": "MIT Technology Review",
+    "publishedAt": "2026-05-02T09:00:00Z",
+    "tags": ["AI", "LLM", "ビジネス"]
+  },
+  {
+    "id": "f2a3b4c5d6e7f8a9",
+    "title": "Stanford study reveals AI models still struggle with genuine common sense",
+    "titleJa": "スタンフォード研究：最新AIモデルは常識推論にまだ課題",
+    "summary": "スタンフォード大学が主要AIモデル10種を対象に行った調査で、日常的な常識を問う問題で平均正答率67%にとどまることが判明。特に物理法則や社会規範の直感的理解で人間との差が顕著だった。",
+    "url": "https://www.technologyreview.com/",
+    "source": "MIT Technology Review",
+    "publishedAt": "2026-05-01T18:00:00Z",
+    "tags": ["AI", "研究", "LLM"]
+  }
+]

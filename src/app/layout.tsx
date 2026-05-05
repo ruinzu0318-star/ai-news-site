@@ -29,9 +29,6 @@ export default function RootLayout({
                 <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-cyan-400">
                   AI NEWS
                 </span>
-                <span className="hidden sm:block text-xs text-gray-500 border border-gray-700 rounded px-2 py-0.5">
-                  毎朝6時更新
-                </span>
               </a>
               <div className="flex items-center gap-4 text-sm text-gray-400">
                 <a href="/" className="hover:text-green-400 transition-colors">

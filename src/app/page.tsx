@@ -122,7 +122,7 @@ export default function Home() {
           </span>
         </h1>
         <p className="text-gray-400 text-sm sm:text-base">
-          海外主要メディアのAI関連ニュースを毎朝6時に日本語要約してお届け
+          海外主要メディアのAI関連ニュースを日本語要約してお届け
         </p>
       </div>
 
